@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
@@ -16,6 +17,9 @@ namespace Schedule.Controllers
         public string Password { get; set; }
         public string Phone { get; set; }
         public string FullName { get; set; }
+        public string Role { get; set; }
+        public string Gender { get; set; }
+        public int Age { get; set; }
     }
     public class LoginModel
     {
@@ -26,23 +30,26 @@ namespace Schedule.Controllers
     {
         public static IEndpointRouteBuilder MapIdentityUserEndpoints(this IEndpointRouteBuilder app)
         {
-            app.MapPost("/singup", CreateUser);
-            app.MapPost("/singin", SingIn);
-
+            app.MapPost("/signup", CreateUser);
+            app.MapPost("/signin", SignIn);
             return app;
         }
 
-
-        private static async Task<IResult> CreateUser(UserManager<User> userManager, [FromBody] UserRegistrationModel userRegistrationModel)
+        [AllowAnonymous]
+        private static async Task<IResult> CreateUser(UserManager<AppUser> userManager, [FromBody] UserRegistrationModel userRegistrationModel)
         {
-            User user = new User()
+            AppUser user = new AppUser()
             {
                 UserName = userRegistrationModel.Email,
                 Email = userRegistrationModel.Email,
                 PhoneNumber = userRegistrationModel.Phone,
                 FullName = userRegistrationModel.FullName,
+                Gender = userRegistrationModel.Gender,
+                DOB = DateOnly.FromDateTime(DateTime.Now.AddYears(-userRegistrationModel.Age)),
             };
             var result = await userManager.CreateAsync(user, userRegistrationModel.Password);
+
+            await userManager.AddToRoleAsync(user, userRegistrationModel.Role);
 
             if (result.Succeeded)
             {
@@ -53,20 +60,26 @@ namespace Schedule.Controllers
                 return Results.BadRequest(result);
             }
         }
-        private static async Task<IResult> SingIn(UserManager<User> userManager, [FromBody] LoginModel loginModel, IOptions<AppSettings> appSettings)
+        [AllowAnonymous]
+        private static async Task<IResult> SignIn(UserManager<AppUser> userManager, [FromBody] LoginModel loginModel, IOptions<AppSettings> appSettings)
         {
             var user = await userManager.FindByEmailAsync(loginModel.Email);
             if (user != null && await userManager.CheckPasswordAsync(user, loginModel.Password))
             {
-                var singKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.JWTSecret));
+                var roles = await userManager.GetRolesAsync(user);
+                var singInKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(appSettings.Value.JWTSecret));
+
+                ClaimsIdentity claims = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim("userID", user.Id.ToString()),
+                    new Claim(ClaimTypes.Role, roles.First())
+                });
+
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
-                    Subject = new ClaimsIdentity(new Claim[]
-                    {
-                                new Claim("UserId", user.Id.ToString())
-                    }),
+                    Subject = claims,
                     Expires = DateTime.UtcNow.AddMinutes(10),
-                    SigningCredentials = new SigningCredentials(singKey, SecurityAlgorithms.HmacSha256Signature)
+                    SigningCredentials = new SigningCredentials(singInKey, SecurityAlgorithms.HmacSha256Signature)
                 };
                 var tokenHandler = new JwtSecurityTokenHandler();
                 var securityToken = tokenHandler.CreateToken(tokenDescriptor);

@@ -8,9 +8,9 @@ namespace Schedule.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
-        public DbSet<User> Users { get; set; }
+        public DbSet<AppUser> Users { get; set; }
         //public DbSet<Role> Roles { get; set; }
         //public DbSet<Category> Categories { get; set; }
         //public DbSet<Lession> Lessions { get; set; }

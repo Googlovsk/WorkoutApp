@@ -4,10 +4,11 @@ import { UserComponent } from "./user/user.component";
 
 @Component({
   selector: 'app-root',
+  standalone: true,
   imports: [RouterOutlet, UserComponent],
   templateUrl: './app.component.html',
   styles: [],
 })
 export class AppComponent {
-  title = 'WorkoutApp';
+  title = 'AuthECClient';
 }

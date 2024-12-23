@@ -12,7 +12,7 @@
         public string Notes { get; set; } //доп. информация от учителя для учащихся (при изменении этого поля записавшимя учащимся должен приходить увед.) 
 
 
-        public User Teacher { get; set; }
+        public AppUser Teacher { get; set; }
         public Category Category { get; set; }
         public ICollection<LessionStudent> Students { get; set; }
 
