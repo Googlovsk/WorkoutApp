@@ -1,0 +1,268 @@
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\appsettings.Development.json
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\appsettings.json
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.staticwebassets.endpoints.json
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.exe
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.deps.json
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.runtimeconfig.json
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Schedule.pdb
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Azure.Core.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Azure.Identity.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.ClientModel.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Memory.Data.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Text.Json.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Schedule\API\Schedule\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.csproj.AssemblyReference.cache
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.GeneratedMSBuildEditorConfig.editorconfig
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.AssemblyInfoInputs.cache
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.AssemblyInfo.cs
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.csproj.CoreCompileInputs.cache
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.MvcApplicationPartsAssemblyInfo.cs
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.MvcApplicationPartsAssemblyInfo.cache
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\scopedcss\bundle\Schedule.styles.css
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets.build.json
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets.development.json
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.Schedule.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.Schedule.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.build.Schedule.props
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Schedule.props
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Schedule.props
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.csproj.Up2Date
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.dll
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\refint\Schedule.dll
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.pdb
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\Schedule.genruntimeconfig.cache
+D:\Schedule\API\Schedule\Schedule\obj\Debug\net8.0\ref\Schedule.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\appsettings.Development.json
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\appsettings.json
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.staticwebassets.endpoints.json
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.exe
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.deps.json
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.runtimeconfig.json
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Schedule.pdb
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Azure.Core.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Azure.Identity.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Humanizer.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Build.Locator.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Mono.TextTemplating.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.ClientModel.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.CodeDom.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Composition.AttributedModel.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Composition.Convention.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Composition.Hosting.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Composition.Runtime.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Composition.TypedParts.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Memory.Data.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Text.Json.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\WebAPI project\API\Schedule\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.csproj.AssemblyReference.cache
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.GeneratedMSBuildEditorConfig.editorconfig
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.AssemblyInfoInputs.cache
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.AssemblyInfo.cs
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.csproj.CoreCompileInputs.cache
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.MvcApplicationPartsAssemblyInfo.cs
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.MvcApplicationPartsAssemblyInfo.cache
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\scopedcss\bundle\Schedule.styles.css
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets.build.json
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets.development.json
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.Schedule.Microsoft.AspNetCore.StaticWebAssets.props
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.Schedule.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.build.Schedule.props
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Schedule.props
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Schedule.props
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets.pack.json
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.csproj.Up2Date
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.dll
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\refint\Schedule.dll
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.pdb
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\Schedule.genruntimeconfig.cache
+D:\WebAPI project\API\Schedule\obj\Debug\net8.0\ref\Schedule.dll
