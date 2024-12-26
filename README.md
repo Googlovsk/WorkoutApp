@@ -23,12 +23,18 @@
 
 ### 1. Настройка API (ASP.NET Core)
 1. Перейти в папку с серверным приложением:
-- cd ../API
+```bash
+cd ../API
+```
 
 2. Перед запуском необходимо настроить строку подключения к базе данных в файле appsettings.json.
 
 3. После настройки строки подключения выполнить следующие команды для подготовки базы данных:
-dotnet restore && dotnet ef migrations add <название миграции> && dotnet ef database update
+```bash
+dotnet restore
+dotnet ef migrations add <название миграции>
+dotnet ef database update
+```
 
 4. Запустить сервер:
 - dotnet run
@@ -38,15 +44,23 @@ dotnet restore && dotnet ef migrations add <название миграции> &
 ### 2. Настройка клиента (Angular)
 
 1. Установитеь Angular CLI, если ещё не установлен:
+```bash
 - npm install -g @angular/cli
+```
 
 2. Перейдити в папку с клиентским приложением:
+```bash
 - cd ../WorkoutApp
+```
 
 3. Установитm зависимости:
+```bash
 - npm install
+```
 
 4. Запустить клиент:
+```bash
 - ng serve -o
+```
 
 #Приложение будет доступно по адресу http://localhost:4200.
