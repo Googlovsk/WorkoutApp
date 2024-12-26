@@ -37,7 +37,9 @@ dotnet ef database update
 ```
 
 4. Запустить сервер:
+```bash
 - dotnet run
+```
 
 #API будет доступен по адресу http://localhost:5020
 
