@@ -28,25 +28,25 @@ cd ../API
 2. Перед запуском необходимо настроить строку подключения к базе данных в файле appsettings.json.
 
 3.После настройки строки подключения выполнить следующие команды для подготовки базы данных:
-dotnet restore
-dotnet ef migrations add <название миграции>
-dotnet ef database update
+- dotnet restore
+- dotnet ef migrations add <название миграции>
+- dotnet ef database update
 
 4.Запустить сервер:
-dotnet run
+- dotnet run
 API будет доступен по адресу http://localhost:5020
 
 ### 2. Настройка клиента (Angular)
 
 1. Установитеь Angular CLI, если ещё не установлен:
-npm install -g @angular/cli
+- npm install -g @angular/cli
 
 2. Перейдити в папку с клиентским приложением:
-cd ../WorkoutApp
+- cd ../WorkoutApp
 
 3.Установитm зависимости:
-npm install
+- npm install
 
 4.Запустить клиент:
-ng serve -o
+- ng serve -o
 Приложение будет доступно по адресу http://localhost:4200.
