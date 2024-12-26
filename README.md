@@ -45,7 +45,7 @@ dotnet ef database update
 
 ### 2. Настройка клиента (Angular)
 
-1. Установитеь Angular CLI, если ещё не установлен:
+1. Установить Angular CLI, если ещё не установлен:
 ```bash
 - npm install -g @angular/cli
 ```
@@ -55,7 +55,7 @@ dotnet ef database update
 - cd ../WorkoutApp
 ```
 
-3. Установитm зависимости:
+3. Установить зависимости:
 ```bash
 - npm install
 ```
