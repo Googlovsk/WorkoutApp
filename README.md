@@ -28,9 +28,9 @@
 2. Перед запуском необходимо настроить строку подключения к базе данных в файле appsettings.json.
 
 3. После настройки строки подключения выполнить следующие команды для подготовки базы данных:
-- dotnet restore
-- dotnet ef migrations add <название миграции>
-- dotnet ef database update
+[ dotnet restore ]
+[ dotnet ef migrations add <название миграции> ]
+[ dotnet ef database update ]
 
 4. Запустить сервер:
 - dotnet run
