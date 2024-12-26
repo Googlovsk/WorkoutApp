@@ -42,11 +42,13 @@ export class RegistrationComponent implements OnInit {
     fullName: ['', Validators.required],
     email: ['', [Validators.required, Validators.email]],
     phone: ['', Validators.required],
+    gender: ['Male', Validators.required],
     password: ['', [
       Validators.required,
       Validators.minLength(6),
       Validators.pattern(/(?=.*[^a-zA-Z0-9 ])/)]],
     confirmPassword: [''],
+    role: ['Student', Validators.required],
   }, { validators: this.passwordMatchValidator })
 
 
@@ -60,7 +62,7 @@ export class RegistrationComponent implements OnInit {
             if (res.succeeded) {
               this.form.reset();
               this.isSubmitted = false;
-              this.toastr.success('New user created!', 'Registration Successful')
+              this.router.navigate(['/signin'], { state: { success: true } });
             }
           },
           error: err => {
@@ -68,14 +70,15 @@ export class RegistrationComponent implements OnInit {
               err.error.errors.forEach((x: any) => {
                 switch (x.code) {
                   case "DuplicateUserName":
+                    this.toastr.error('Имя пользователя уже занято.', 'Ошибка регистрации');
                     break;
 
                   case "DuplicateEmail":
-                    this.toastr.error('Email is already taken.', 'Registration Failed')
+                    this.toastr.error('Этот Email уже занят.', 'Ошибка регистрации')
                     break;
 
                   default:
-                    this.toastr.error('Contact the developer', 'Registration Failed')
+                    this.toastr.error('Обратитесь к разработчику.', 'Ошибка регистрации')
                     console.log(x);
                     break;
                 }
@@ -87,7 +90,6 @@ export class RegistrationComponent implements OnInit {
         });
     }
   }
-
   hasDisplayableError(controlName: string): Boolean {
     const control = this.form.get(controlName);
     return Boolean(control?.invalid) && (this.isSubmitted || Boolean(control?.touched) || Boolean(control?.dirty))

@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Schedule.Data;
-using Schedule.Models;
+using WorkoutAppApi.Data;
+using WorkoutAppApi.Models;
 
-namespace Schedule.Extentions
+namespace WorkoutAppApi.Extentions
 {
     public static class AppConfigExtentions
     {

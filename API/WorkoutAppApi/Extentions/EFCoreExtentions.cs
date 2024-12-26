@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Schedule.Data;
+using WorkoutAppApi.Data;
 
-namespace Schedule.Extentions
+namespace WorkoutAppApi.Extentions
 {
     public static class EFCoreExtentions
     {

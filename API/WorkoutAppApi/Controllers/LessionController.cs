@@ -1,13 +1,11 @@
-﻿
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Schedule.Models.Domain;
-using Schedule.Models;
-using static Schedule.Models.Domain.Lession;
-using Schedule.Data;
+﻿using Microsoft.AspNetCore.Mvc;
+using WorkoutAppApi.Models.Domain;
+using static WorkoutAppApi.Models.Domain.Lession;
+using WorkoutAppApi.Data;
 using Microsoft.EntityFrameworkCore;
+using WorkoutAppApi.Models.DTOs;
 
-namespace Schedule.Controllers
+namespace WorkoutAppApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -20,32 +18,64 @@ namespace Schedule.Controllers
             _context = context;
         }
 
-        // GET: api/Lessions
         [HttpGet]
         public async Task<IActionResult> GetLessions()
         {
             var lessions = await _context.Lessions
-                .Include(l => l.Teacher)
                 .Include(l => l.Category)
+                .Include(l => l.Teacher)
+                .Select(l => new LessionDTO
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    TeacherId = l.TeacherId,
+                    Status = (int)l.Status,
+                    StartDate = (DateTime)l.StartDate,
+                    EndDate = (DateTime)l.EndDate,
+                    CategoryId = l.CategoryId,
+                    Notes = l.Notes,
+                    IsGroup = l.IsGroup,
+                    Location = l.Location,
+                    MaxGroupSize = l.MaxGroupSize,
+                })
                 .ToListAsync();
-
             return Ok(lessions);
         }
 
-        // POST: api/Lessions
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Lession>> GetLession(int id)
+        {
+            var lession = await _context.Lessions
+                .Include(l => l.Category)
+                .Include(l => l.Teacher)
+                .Select(l => new LessionDTO
+                {
+                    Id = l.Id,
+                    Name = l.Name,
+                    TeacherId = l.TeacherId,
+                    Status = (int)l.Status,
+                    StartDate = (DateTime)l.StartDate,
+                    EndDate = (DateTime)l.EndDate,
+                    CategoryId = l.CategoryId,
+                    Notes = l.Notes,
+                    IsGroup = l.IsGroup,
+                    Location = l.Location,
+                    MaxGroupSize = l.MaxGroupSize,
+                })
+                .FirstOrDefaultAsync(l => l.Id == id);
+
+            if (lession == null)
+            {
+                return NotFound();
+            }
+            return Ok(lession);
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreateLession([FromBody] LessionDTO lessionDto)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
-
-            // Check teacher availability
-            if (!IsTeacherAvailable(lessionDto.TeacherId, lessionDto.StartDate, lessionDto.EndDate))
-                return Conflict("The teacher is not available for the selected time slot.");
-
-            // Check room availability if room is specified
-            if (lessionDto.RoomId.HasValue && !IsRoomAvailable(lessionDto.RoomId.Value, lessionDto.StartDate, lessionDto.EndDate))
-                return Conflict("The room is not available for the selected time slot.");
 
             var lession = new Lession
             {
@@ -56,48 +86,44 @@ namespace Schedule.Controllers
                 EndDate = lessionDto.EndDate,
                 Status = LessionStatus.Scheduled,
                 Notes = lessionDto.Notes,
-                IsGroup = lessionDto.IsGroup
+                IsGroup = lessionDto.IsGroup,
+                MaxGroupSize = lessionDto.MaxGroupSize,
+                Location = lessionDto.Location
             };
 
             _context.Lessions.Add(lession);
             await _context.SaveChangesAsync();
 
-            // Create a schedule entry for the teacher
-            var schedule = new Schedule.Models.Domain.Schedule
-            {
-                TeacherId = lessionDto.TeacherId,
-                LocationId = lessionDto.RoomId,
-                StartTime = lessionDto.StartDate,
-                EndTime = lessionDto.EndDate,
-                LessionId = lession.Id,
-            };
-
-            _context.Schedules.Add(schedule);
-            await _context.SaveChangesAsync();
-
-            //return CreatedAtAction("GetLession", new { id = lession.Id }, lession);
-            return Ok(lession);
+            return CreatedAtAction(nameof(GetLession), new { id = lession.Id }, lession);
         }
-
-        // POST: api/Lessions/{id}/Register
         [HttpPost("{id}/Register")]
         public async Task<IActionResult> RegisterStudent(int id, [FromBody] RegisterStudentDTO dto)
         {
             var lession = await _context.Lessions
+                .Include(l => l.Teacher)
                 .Include(l => l.Students)
                 .FirstOrDefaultAsync(l => l.Id == id);
 
             if (lession == null)
-                return NotFound("Lession not found.");
+                return NotFound("Занятие не найдено.");
 
-            // Check if the student is already registered
             if (lession.Students.Any(s => s.StudentId == dto.StudentId.ToString()))
-                return Conflict("The student is already registered for this lession.");
+                return Conflict("Студент уже зарегистрирован на это занятие.");
 
-            // Check teacher availability
-            if (!IsTeacherAvailable(lession.TeacherId, lession.StartDate.Value, lession.EndDate.Value))
-                return Conflict("The teacher is not available for the selected time slot.");
+            var schedule = await _context.Schedules
+                .FirstOrDefaultAsync(s => s.TeacherId == lession.TeacherId);
 
+            if (schedule == null)
+                return BadRequest("Для преподавателя не указано расписание.");
+
+            if (lession.StartDate.HasValue && lession.EndDate.HasValue)
+            {
+                if (lession.StartDate.Value.Date < schedule.CanWorkWith.ToDateTime(TimeOnly.MinValue) ||
+                    lession.EndDate.Value.Date > schedule.CanWorkBy.ToDateTime(TimeOnly.MaxValue))
+                {
+                    return BadRequest("Преподаватель в данный момент не доступен. Выберите другое время.");
+                }
+            }
             var lessionStudent = new LessionStudent
             {
                 LessionId = id,
@@ -109,19 +135,56 @@ namespace Schedule.Controllers
 
             return Ok();
         }
-
-        private bool IsTeacherAvailable(string teacherId, DateTime startTime, DateTime endTime)
+        [HttpPut("{id}")]
+        public async Task<IActionResult> UpdateLession(int id, LessionDTO lessionDto)
         {
-            return !_context.Schedules.Any(s =>
-                s.TeacherId == teacherId &&
-                ((s.StartTime < endTime && s.EndTime > startTime)));
+            if (id != lessionDto.Id)
+            {
+                return BadRequest();
+            }
+            var lession = await _context.Lessions.FindAsync(id);
+            if (lession != null)
+            {
+                lession.Name = lessionDto.Name;
+                lession.Status = (LessionStatus)lessionDto.Status;
+                lession.Notes = lessionDto.Notes;
+                lession.Location = lessionDto.Location;
+                lession.MaxGroupSize = lessionDto.MaxGroupSize;
+                lession.IsGroup = lessionDto.IsGroup;
+                lession.CategoryId = lessionDto.CategoryId;
+
+                _context.Entry(lessionDto).State = EntityState.Modified;
+
+                if (!lession.IsGroup)
+                {
+                    lession.MaxGroupSize = 1;
+                }
+                try
+                {
+                    await _context.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    return StatusCode(500, "Ошибка при обновлении базы данных");
+                }
+                return NoContent();
+            }
+            return NotFound();
         }
-
-        private bool IsRoomAvailable(int roomId, DateTime startTime, DateTime endTime)
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteLession(int id)
         {
-            return !_context.Schedules.Any(s =>
-                s.LocationId == roomId &&
-                ((s.StartTime < endTime && s.EndTime > startTime)));
+            var lession = await _context.Lessions.FindAsync(id);
+
+            if (lession == null)
+            {
+                return NotFound();
+            }
+
+            _context.Lessions.Remove(lession);
+            await _context.SaveChangesAsync();
+
+            return NoContent();
         }
     }
 }

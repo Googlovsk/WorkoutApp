@@ -20,12 +20,12 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
           if (err.status == 401) {//don't have a valid token
             authService.deleteToken()
             setTimeout(() => {
-              toastr.info('Please login again', 'Session Expired!')
+              toastr.info('Пожалуйста, войдите снова', 'Сессия прервана!')
             }, 1500);
             router.navigateByUrl('/signin')
           }
           else if (err.status == 403)
-            toastr.error("Oops! It seems you're not authorized to perform the action.")
+            toastr.error("Упс! Похоже, у вас нет прав для выполнения этого действия.")
         }
       })
     );

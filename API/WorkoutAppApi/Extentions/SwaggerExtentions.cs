@@ -2,7 +2,7 @@
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
-namespace AuthECAPI.Extensions
+namespace WorkoutAppApi.Extensions
 {
     public static class SwaggerExtensions
     {

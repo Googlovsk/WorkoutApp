@@ -11,6 +11,10 @@ body {
   margin-top: 0.1rem !important;
 }
 
+.btn {
+  transition: background-color 0.3s ease-in-out;
+}
+
 #main {
   margin-left: 240px;
 }

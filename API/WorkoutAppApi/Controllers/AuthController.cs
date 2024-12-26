@@ -1,29 +1,32 @@
 ﻿using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Schedule.Models.Domain;
-using Schedule.Models;
+using WorkoutAppApi.Models.Domain;
+using WorkoutAppApi.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using WorkoutAppApi.Models.DTOs;
+using WorkoutAppApi.Data;
 
-namespace Schedule.Controllers
+namespace WorkoutAppApi.Controllers
 {
 
     [ApiController]
     [Route("api")]
     public class AuthController : ControllerBase
     {
+        private readonly AppDbContext _context;
         private readonly UserManager<AppUser> _userManager;
         private readonly IOptions<AppSettings> _appSettings;
 
-        public AuthController(UserManager<AppUser> userManager, IOptions<AppSettings> appSettings)
+        public AuthController(UserManager<AppUser> userManager, IOptions<AppSettings> appSettings, AppDbContext context)
         {
             _userManager = userManager;
             _appSettings = appSettings;
+            _context = context;
         }
 
         [HttpPost("signup")]
@@ -32,12 +35,11 @@ namespace Schedule.Controllers
         {
             var user = new AppUser
             {
+                FullName = userRegistrationModel.FullName,
                 UserName = userRegistrationModel.Email,
                 Email = userRegistrationModel.Email,
                 PhoneNumber = userRegistrationModel.Phone,
-                FullName = userRegistrationModel.FullName,
                 Gender = userRegistrationModel.Gender,
-                DOB = DateOnly.FromDateTime(DateTime.Now.AddYears(-userRegistrationModel.Age))
             };
 
             var result = await _userManager.CreateAsync(user, userRegistrationModel.Password);
@@ -46,8 +48,28 @@ namespace Schedule.Controllers
                 return BadRequest(result.Errors);
 
             if (!string.IsNullOrEmpty(userRegistrationModel.Role))
-                await _userManager.AddToRoleAsync(user, userRegistrationModel.Role);
+            {
+                //return BadRequest($"Received Role: {userRegistrationModel.Role}");
+                if (userRegistrationModel.Role.Equals("Teacher", StringComparison.OrdinalIgnoreCase))
+                {
+                    await _userManager.AddToRoleAsync(user, userRegistrationModel.Role);
+                    var schedule = new TeacherSchedule
+                    {
+                        TeacherId = user.Id
+                    };
 
+                    _context.Schedules.Add(schedule);
+                    await _context.SaveChangesAsync();
+                }
+                if (userRegistrationModel.Role.Equals("Student", StringComparison.OrdinalIgnoreCase))
+                {
+                    await _userManager.AddToRoleAsync(user, userRegistrationModel.Role);
+                }
+            }
+            else
+            {
+                return BadRequest("Role is null or empty");
+            }
             return Ok(new { Succeeded = result.Succeeded });
         }
 
@@ -99,13 +121,13 @@ namespace Schedule.Controllers
 
             if (userDetails == null)
             {
-                return NotFound(new { message = "User not found." });
+                return NotFound(new { message = "Пользователь не найден" });
             }
 
             return Ok(new
             {
                 Email = userDetails.Email,
-                FullName = userDetails.FullName
+                FullName = userDetails.FullName,
             });
         }
     }

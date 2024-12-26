@@ -1,9 +1,9 @@
-using AuthECAPI.Extensions;
-using Schedule.Controllers;
-using Schedule.Extentions;
-using Schedule.Models.Domain;
+using WorkoutAppApi.Extensions;
+using WorkoutAppApi.Controllers;
+using WorkoutAppApi.Extentions;
+using WorkoutAppApi.Models.Domain;
 
-namespace Schedule
+namespace WorkoutAppApi
 {
     public class Program
     {

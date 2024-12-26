@@ -6,6 +6,20 @@
 </div>
 <form [formGroup]="form" (ngSubmit)="onSubmit()">
   <div class="mb-3">
+    <label class="form-label d-block">Тип учетной записи</label>
+    <div class="btn-group w-100" role="group" aria-label="Тип учетной записи">
+      <input type="radio" class="btn-check" id="role-student" formControlName="role" value="Student">
+      <label class="btn btn-outline-success w-50" for="role-student">Студент</label>
+  
+      <input type="radio" class="btn-check" id="role-teacher" formControlName="role" value="Teacher">
+      <label class="btn btn-outline-success w-50" for="role-teacher">Преподаватель</label>
+    </div>
+    <div class="error-feedback"
+         *ngIf="hasDisplayableError('role') && form.get('role')?.hasError('required')">
+      Пожалуйста, выберите тип учетной записи.
+    </div>
+  </div>
+  <div class="mb-3">
     <input class="form-control bg-body-secondary" placeholder="ФИО" formControlName="fullName">
     <div class="error-feedback" *ngIf="hasDisplayableError('fullName') && form.get('fullName')?.hasError('required')">Введите ФИО.</div>
   </div>
@@ -19,6 +33,17 @@
   <div class="mb-3">
     <input class="form-control bg-body-secondary" placeholder="Телефон" formControlName="phone">
     <div class="error-feedback" *ngIf="hasDisplayableError('phone') && form.get('phone')?.hasError('required')">Введите номер телефона</div>
+  </div>
+  <div class="mb-3">
+    <label for="gender" class="form-label">Пол</label>
+    <select class="form-select bg-body-secondary" formControlName="gender" id="gender">
+      <option value="Male">Мужской</option>
+      <option value="Female">Женский</option>
+    </select>
+    <div class="error-feedback" 
+         *ngIf="hasDisplayableError('gender') && form.get('gender')?.hasError('required')">
+      Пожалуйста, выберите пол.
+    </div>
   </div>
   <div class="mb-3">
     <input class="form-control bg-body-secondary" placeholder="Пароль" formControlName="password">

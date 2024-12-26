@@ -1,4 +1,4 @@
-﻿namespace Schedule.Models
+﻿namespace WorkoutAppApi.Models
 {
     public class AppSettings
     {

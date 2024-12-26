@@ -92,10 +92,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "AuthECClient:build:production"
+              "buildTarget": "WorkoutApp:build:production"
             },
             "development": {
-              "buildTarget": "AuthECClient:build:development"
+              "buildTarget": "WorkoutApp:build:development"
             }
           },
           "defaultConfiguration": "development"

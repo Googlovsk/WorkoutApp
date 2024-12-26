@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
-using Schedule.Data;
-using Schedule.Models.Domain;
+using WorkoutAppApi.Data;
+using WorkoutAppApi.Models.Domain;
 using System.Text;
 
-namespace Schedule.Extentions
+namespace WorkoutAppApi.Extentions
 {
     public static class IdentityExtentions
     {
@@ -73,17 +73,6 @@ namespace Schedule.Extentions
                 {
                     Console.WriteLine("No Authorization header found.");
                 }
-                await next();
-            });
-            app.Use(async (context, next) =>
-            {
-                if (context.Request.Path.StartsWithSegments("/swagger"))
-                {
-                    // Пропустить авторизацию для запросов к Swagger
-                    await next();
-                    return;
-                }
-
                 await next();
             });
             app.UseAuthentication();

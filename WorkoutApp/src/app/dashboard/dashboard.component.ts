@@ -11,9 +11,7 @@ import { UserService } from '../shared/services/user.service';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private router: Router,
-    private authService: AuthService,
-    private userService: UserService) { }
+  constructor(private router: Router, private authService: AuthService, private userService: UserService) { }
   fullName: string = ''
 
   ngOnInit(): void {
